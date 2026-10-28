@@ -22,7 +22,7 @@ This work investigates how metaphorical language affects cross-domain misalignme
 | Qwen3-8B size ablation | Paper, Table 4 |
 | Poetry corpus | [jnb666/poems](https://huggingface.co/datasets/jnb666/poems) |
 | Emergent Misalignment Plus: medical, legal, security | [Dataset](https://huggingface.co/datasets/truthfulai/emergent_plus) |
-| TruthfulQA | [Repository](https://github.com/sylinrl/TruthfulQA) |
+| TruthfulQA | [Dataset](https://huggingface.co/datasets/domenicrosati/TruthfulQA) |
 | Qwen3-32B sparse autoencoders | [adamkarvonen/qwen3-32b-saes](https://huggingface.co/adamkarvonen/qwen3-32b-saes) |
 | LlamaFactory | [Repository](https://github.com/hiyouga/LlamaFactory) |
 
@@ -82,16 +82,3 @@ python -m pip install \
 ```
 
 These commands install the core evaluation stack.
-
-### Training and analysis dependencies
-
-The export also records `trl==0.9.6`, `eai-sparsify==1.1.3`, `einops==0.8.1`, and `scikit-learn==1.7.1`. Install these for the corresponding training and latent-feature analysis workflows:
-
-```bash
-python -m pip install \
-  trl==0.9.6 \
-  eai-sparsify==1.1.3 \
-  einops==0.8.1 \
-  scikit-learn==1.7.1
-```
-
